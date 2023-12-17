@@ -1,21 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class Raycast_script : MonoBehaviour
+public class RaycastScript : MonoBehaviour
 {
-    public GameObject spawnPrefab;
-    GameObject spawnedObject;
-    bool isSpawned = false;
+    public GameObject spawnedObject;
     ARRaycastManager raycastManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     // Start is called before the first frame update
     void Start()
     {
-        isSpawned = false;
         raycastManager = GetComponent<ARRaycastManager>();
     }
 
@@ -26,17 +23,20 @@ public class Raycast_script : MonoBehaviour
         {
             if (raycastManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon))
             {
-                if (!isSpawned)
-                {
-                    Pose hitPose = hits[0].pose;
-                    spawnedObject = Instantiate(spawnPrefab, hitPose.position, hitPose.rotation);
-                    isSpawned = true;
-                } 
-                else
+                if (!IsPointerOverUIObject())
                 {
                     spawnedObject.transform.position = hits[0].pose.position;
                 }
             }
         }
+    }
+
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData enentDataCurrentPosition = new PointerEventData(EventSystem.current);
+        enentDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(enentDataCurrentPosition, results);
+        return results.Count > 0;
     }
 }

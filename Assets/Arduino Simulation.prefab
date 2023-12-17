@@ -530,6 +530,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3809456544551405578}
+  - component: {fileID: 7009809265931730318}
   m_Layer: 0
   m_Name: led
   m_TagString: Untagged
@@ -553,6 +554,19 @@ Transform:
   - {fileID: 4323306523194547790}
   m_Father: {fileID: 6216398408890987246}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &7009809265931730318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581911413868876464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6795940f657c7448912f8a687f61c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 4581911413868876464}
 --- !u!1 &5029981280339252993
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7239921135047914929}
+  - component: {fileID: 8080652176508361616}
   m_Layer: 0
   m_Name: Pin Wire
   m_TagString: Untagged
@@ -735,6 +750,19 @@ Transform:
   - {fileID: 2239675690141823298}
   m_Father: {fileID: 6216398408890987246}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8080652176508361616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027553245388302553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6795940f657c7448912f8a687f61c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 6027553245388302553}
 --- !u!1 &7005492283839569505
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3148937425521288191}
+  - component: {fileID: 4810561123356995339}
   m_Layer: 0
   m_Name: Ground Wire
   m_TagString: Untagged
@@ -768,6 +797,19 @@ Transform:
   - {fileID: 2476271017208285275}
   m_Father: {fileID: 6216398408890987246}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4810561123356995339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7005492283839569505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6795940f657c7448912f8a687f61c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 7005492283839569505}
 --- !u!1 &7697371486260246094
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +836,7 @@ Transform:
   m_GameObject: {fileID: 7697371486260246094}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0001, y: 0, z: 0.0102}
+  m_LocalPosition: {x: -0.0001, y: 0, z: 0.0071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -812,8 +854,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 3
-  m_Range: 0.1
+  m_Intensity: 5
+  m_Range: 0.2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
