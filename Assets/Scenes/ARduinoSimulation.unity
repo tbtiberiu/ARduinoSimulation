@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,12 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &193406282 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7005492283839569505, guid: c70acee5630128a4fbbf3870c6fbeedf,
-    type: 3}
-  m_PrefabInstance: {fileID: 348371569}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &348371569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147,6 +140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arduino Simulation
       objectReference: {fileID: 0}
+    - target: {fileID: 5742778282605072341, guid: c70acee5630128a4fbbf3870c6fbeedf,
+        type: 3}
+      propertyPath: buttonElement
+      value: 
+      objectReference: {fileID: 703407588}
     - target: {fileID: 6027553245388302553, guid: c70acee5630128a4fbbf3870c6fbeedf,
         type: 3}
       propertyPath: m_IsActive
@@ -217,30 +215,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7900536758651323655, guid: c70acee5630128a4fbbf3870c6fbeedf,
+        type: 3}
+      propertyPath: buttonElement
+      value: 
+      objectReference: {fileID: 1770116925}
+    - target: {fileID: 8270506285829916410, guid: c70acee5630128a4fbbf3870c6fbeedf,
+        type: 3}
+      propertyPath: buttonElement
+      value: 
+      objectReference: {fileID: 778948422}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7005492283839569505, guid: c70acee5630128a4fbbf3870c6fbeedf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1122885773}
-    - targetCorrespondingSourceObject: {fileID: 6027553245388302553, guid: c70acee5630128a4fbbf3870c6fbeedf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1982890335}
-    - targetCorrespondingSourceObject: {fileID: 2343733666022208138, guid: c70acee5630128a4fbbf3870c6fbeedf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 348371572}
-    - targetCorrespondingSourceObject: {fileID: 2343733666022208138, guid: c70acee5630128a4fbbf3870c6fbeedf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 348371575}
-    - targetCorrespondingSourceObject: {fileID: 2343733666022208138, guid: c70acee5630128a4fbbf3870c6fbeedf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 348371576}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70acee5630128a4fbbf3870c6fbeedf, type: 3}
 --- !u!1 &348371570 stripped
 GameObject:
@@ -248,59 +236,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 348371569}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &348371571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2343733666022208138, guid: c70acee5630128a4fbbf3870c6fbeedf,
+--- !u!114 &348371572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7947934644662159254, guid: c70acee5630128a4fbbf3870c6fbeedf,
     type: 3}
   m_PrefabInstance: {fileID: 348371569}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &348371572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348371571}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6795940f657c7448912f8a687f61c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 348371571}
---- !u!114 &348371575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348371571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ecd3aee58229e4c9f49d716b41b8f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materialWithEmission: {fileID: 2100000, guid: a9be3230dc3234740a85c225feb14862,
-    type: 2}
-  pointLight: {fileID: 1463277172}
-  groundWire: {fileID: 193406282}
-  pinWire: {fileID: 1122885769}
---- !u!114 &348371576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348371571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b789f0fa64f66469119575bdf57bdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonElement: {fileID: 778948422}
-  activeColor: {r: 0.9019608, g: 0.49411765, b: 0.13333334, a: 1}
-  activeColorDark: {r: 0.827451, g: 0.32941177, b: 0, a: 1}
-  inactiveColor: {r: 1, g: 1, b: 1, a: 1}
-  inactiveColorDark: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
 --- !u!222 &389333658
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1169,41 +1116,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983835052}
   m_CullTransparentMesh: 1
---- !u!1 &1122885769 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6027553245388302553, guid: c70acee5630128a4fbbf3870c6fbeedf,
-    type: 3}
-  m_PrefabInstance: {fileID: 348371569}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1122885771 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4810561123356995339, guid: c70acee5630128a4fbbf3870c6fbeedf,
     type: 3}
   m_PrefabInstance: {fileID: 348371569}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193406282}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6795940f657c7448912f8a687f61c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1122885773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193406282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b789f0fa64f66469119575bdf57bdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonElement: {fileID: 1770116925}
-  activeColor: {r: 0.9019608, g: 0.49411765, b: 0.13333334, a: 1}
-  activeColorDark: {r: 0.827451, g: 0.32941177, b: 0, a: 1}
-  inactiveColor: {r: 1, g: 1, b: 1, a: 1}
-  inactiveColorDark: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
 --- !u!1 &1173318909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,12 +1572,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!108 &1463277172 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 7509011136706326000, guid: c70acee5630128a4fbbf3870c6fbeedf,
-    type: 3}
-  m_PrefabInstance: {fileID: 348371569}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1463277173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1723,7 +1641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6795940f657c7448912f8a687f61c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 650339611}
+  targetObject: {fileID: 650339611}
 --- !u!114 &1463277177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1974,29 +1892,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 348371569}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122885769}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6795940f657c7448912f8a687f61c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1982890335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122885769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b789f0fa64f66469119575bdf57bdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonElement: {fileID: 703407588}
-  activeColor: {r: 0.9019608, g: 0.49411765, b: 0.13333334, a: 1}
-  activeColorDark: {r: 0.827451, g: 0.32941177, b: 0, a: 1}
-  inactiveColor: {r: 1, g: 1, b: 1, a: 1}
-  inactiveColorDark: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
 --- !u!1 &2118344030
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,21 +2,22 @@ using UnityEngine;
 
 public class MeshToggler : MonoBehaviour
 {
-    public GameObject gameObject;
+    public GameObject targetObject;
     private bool isActive = false;
 
     void Start()
     {
-        if (gameObject != null)
+        if (targetObject != null)
         {
-            isActive = gameObject.activeSelf;
-            gameObject.GetComponent<ChangeColorBasedOnActiveState>().SetColors(isActive);
+            isActive = targetObject.activeSelf;
+            targetObject.GetComponent<ChangeColorBasedOnActiveState>().SetColors(isActive);
         }
     }
 
-    public void Toggle() {
+    public void Toggle()
+    {
         isActive = !isActive;
-        gameObject.SetActive(isActive);
-        gameObject.GetComponent<ChangeColorBasedOnActiveState>().SetColors(isActive);
+        targetObject.SetActive(isActive);
+        targetObject.GetComponent<ChangeColorBasedOnActiveState>().SetColors(isActive);
     }
 }
